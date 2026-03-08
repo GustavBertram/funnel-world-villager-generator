@@ -247,7 +247,22 @@ class Villager:
 
         print()
 
-
-
-
-
+    def printcsv(self):
+        character = self.name+','+self.personality_trait+' '+self.gender+' '+self.race+' '+self.occupation+','+self.physical_trait
+        for stat in self.stats:
+            character=character+','+str(stat[1])+'('+str(stat[2])+')'
+            
+        character=character+','+str(self.hp)+','+str(self.load)
+        
+        g = ''
+        for item in self.gear:
+            g = g+item.replace(',',';')+' '
+        
+        b = ''
+        if len(self.bonds) > 0:
+            for bond in self.bonds:
+                b=b+'*'+bond.replace(',',';')+' '
+                
+        character=character+','+g+','+b
+        
+        print(character)
