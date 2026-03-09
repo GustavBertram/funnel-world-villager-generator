@@ -192,10 +192,8 @@ class Villager:
         self.damage = '1d4'
         self.race, self.occupation, self.gear = choose_race_occupation_gear()
 
-        if (self.occupation in ['Alewife','Prostitute']):
+        if (self.occupation in ['Alewife']):
             self.gender = 'Female'
-        elif (self.occupation in ['Executioner']):
-            self.gender = 'Male'
 
         self.name = choose_name(self.gender, self.race, chosen_names) 
         self.physical_trait = choose_physical_trait(self.gender, self.race)

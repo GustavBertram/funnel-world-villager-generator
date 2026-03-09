@@ -7,7 +7,7 @@ The adventure has rules for randomly generating 0-Level villagers, and this code
 * Physical traits are divided into male, female and neutral
 * Male elves only have neutral traits, since they can't grow beards
 * Female dwarves have male traits too, because they can grow beards
-* Alewife and Prostitute are female-only occupations, Executioner is male-only
+* Alewife is a female-only occupation
 
 Usage:
 ```
