@@ -36,6 +36,10 @@ def make_characters(player_count=3, villager_count=3, existing_names=[]):
 
     for c in players + villagers:
         c.print()
+    
+    print('Name,Description,Physical Trait,STR,DEX,CON,INT,WIS,CHA,LCK,HP,Load,Gear,Bonds')
+    for c in players + villagers:
+        c.printcsv()
    
 def get_input():
     print('How many player characters to generate: ', end='')

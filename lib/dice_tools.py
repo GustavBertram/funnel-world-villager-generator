@@ -7,7 +7,7 @@ def d(dice = 1, faces = 6):
     return str(total)
 
 def choose(*args):
-    return random.choice([args])
+    return str(random.choice(args))
 
 def rollstat(name):
     stat = int(d(3,6))
